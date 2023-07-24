@@ -97,24 +97,17 @@ span{
 }
 
 @media screen and (min-width: 768px) {
-    .home .h1{
-        max-width: 100%;
-        margin: 0 auto;
-    }
+
 }
 
 /* For tablets and larger screens */
 @media screen and (max-width: 767px) {
-    .home .h1{
-        padding: 30px;
-    }
+
 }
 
 /* For mobile devices */
 @media screen and (max-width: 480px) {
-    .home .h1{
-        padding: 20px;
-    }
+
 }
 
 button{
