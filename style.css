@@ -105,10 +105,59 @@ span{
 
 }
 
-/* For mobile devices */
-@media screen and (max-width: 480px) {
 
+/* Navbar styles for mobile */
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        background-color: #636e72;
+        opacity: 0.9;
+        max-height: 0;
+        overflow: hidden;
+        transition: all ease-in-out 0.3s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar ul.open {
+        max-height: 100vh;
+    }
+    .navbar ul li {
+        width: 80%;
+    }
+    .navbar ul li a {
+        padding: 0.8rem 0;
+    }
+    .navbar .navbar__toggler {
+        display: block;
+        position: absolute;
+        height: 2rem;
+        top: 1.2rem;
+        right: 1.2rem;
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        outline: none;
+    }
+    .navbar .navbar__toggler span {
+        background-color: #fff;
+    }
+    .navbar .navbar__toggler span:before,
+    .navbar .navbar__toggler span:after {
+        background-color: #fff;
+    }
+    .navbar .navbar__toggler.open__hamburger span {
+        background-color: transparent;
+    }
+    .navbar .navbar__toggler.open-navbar__toggler span:before {
+        transform: translateY(0px) rotate(45deg);
+    }
+    .navbar .navbar__toggler.open-navbar__toggler span:after {
+        transform: translateY(-3px) rotate(-45deg);
+    }
 }
+
 
 button{
     background-color: #01f387;
@@ -505,4 +554,5 @@ span .span1{
     color: white;
     font-size: 10px;
 }
+
 
