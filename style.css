@@ -511,6 +511,11 @@ span .span1{
   .photo-item {
     position: relative;
   }
+
+  .e4{
+    width: 400px;
+    height: auto;
+  }
   
   .description {
     position: absolute;
