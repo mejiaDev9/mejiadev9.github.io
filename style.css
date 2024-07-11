@@ -13,9 +13,9 @@
 
 
 .home{
-    width: 100%;
+    width: auto;
+    height: auto;
     display: flex;
-    padding: 78px 0px;
     background-color: #252839;
 }
 
@@ -378,8 +378,9 @@ span{
 
 /*about css*/
 .about{
-    width: 100%;
-    padding: 78px 0px;
+    width: auto;
+    height: auto;
+    display: flex;
     background-color: #191919;
 }
 
@@ -431,14 +432,16 @@ span .span1{
 /*skills css*/
 
 .skill{
-    width: 100%;
-    padding: 78px 0px;
+    width: auto;
+    height: auto;
+    display: flex;
     background-color: #191919;
 }
 
 .skill img{
     height:  auto;
-    width: 420px;
+    width: 500px;
+    padding-right: 60px;
     filter: drop-shadow(10px 8px 6px green);
 }
 
@@ -483,11 +486,9 @@ span .span1{
 
 /*project css*/
 .photo-section {
-    width: 100%;
-    max-width: 100%;
+    width: auto;
+    height: auto;
     background-color: #191919;
-    padding: 40px;
-
 }
 
 .pro-text h4{
