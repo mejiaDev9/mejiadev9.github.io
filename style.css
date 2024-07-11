@@ -533,9 +533,9 @@ span .span1{
   }
   
 
- .e1, .e3{
-    width: 200px;
-    height: auto;
+ .e1{
+    width: auto;
+    height: 370px;
     border-radius: 20px;
     border: 1px solid #ddd;
     filter: drop-shadow(10px 8px 6px blue);
@@ -551,9 +551,18 @@ span .span1{
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
-.e4{
+.e3{
     width:auto;
     height: 200px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    filter: drop-shadow(10px 8px 6px blue);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.e4{
+    width:auto;
+    height: 370px;
     border-radius: 20px;
     border: 1px solid #ddd;
     filter: drop-shadow(10px 8px 6px blue);
