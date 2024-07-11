@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -16,8 +16,9 @@
 }
 
 .home img {
-    margin-top: 40px;
-    height: 500px;
+    margin-top: 150px;
+    margin-bottom: auto;
+    height: 400px;
     width: auto;
     filter: drop-shadow(10px 8px 6px black);
 }
@@ -47,7 +48,7 @@
 }
 
 span {
-    color: #f9004d
+    color: #f9004d;
 }
 
 .home-text p {
@@ -378,6 +379,7 @@ span {
     .about-text,
     .skill-text {
         max-width: 100%;
+        padding: 0 10px; 
     }
 }
 
@@ -407,20 +409,22 @@ span {
 
 /* About Page */
 .about {
+    width: auto;
+    height: auto;
     background-color: #191919;
-    padding: 60px 20px;
 }
 
 .about img {
-    max-width: 100%;
+    margin-top: 50px;
+    width: 100%; 
     height: auto;
-    margin-bottom: 20px;
 }
 
 .about-text {
     color: #fff;
-    max-width: 500px;
-    text-align: left;
+    max-width: 100%;
+    text-align: center; 
+    padding: 0 10px; 
 }
 
 .about-text h4 {
@@ -437,20 +441,22 @@ span {
 
 /* Skills Page */
 .skill {
+    width: auto;
+    height: auto;
     background-color: #191919;
-    padding: 60px 20px;
 }
 
 .skill img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
+    width: 100%; 
+    height: auto; 
+    margin-top: 40px;
 }
 
 .skill-text {
     color: #fff;
-    max-width: 500px;
-    text-align: left;
+    padding-left: 10px; 
+    max-width: 100%;
+    text-align: center; 
 }
 
 .skill-text h4 {
@@ -463,11 +469,11 @@ span {
     color: #fff;
     font-size: 18px;
     line-height: 1.6;
-    
 }
 
 /* Project CSS */
 .photo-section {
+    padding-top: 100px;
     width: auto;
     height: auto;
     background-color: #191919;
@@ -496,7 +502,7 @@ span {
     position: relative;
 }
 
-/* Default image styles */
+
 .photo-item img {
     width: 100%;
     height: auto;
@@ -524,7 +530,7 @@ span {
     visibility: visible;
 }
 
-/* Specific styles for different image sizes */
+
 .e1 {
     height: 370px;
 }
@@ -541,16 +547,14 @@ span {
     height: 230px;
 }
 
-/* Text styling for description */
 .par1, .par2, .par3 {
     color: white;
     font-size: 10px;
 }
 
-/* Adjust image size for larger screens */
+
 @media screen and (min-width: 1024px) {
     .photo-item img {
-        /* Adjust these values to fit your needs */
         max-width: 100%;
         height: auto;
         object-fit: cover;
@@ -573,9 +577,33 @@ span {
     }
 }
 
-/* Mobile View */
+
 @media screen and (max-width: 768px) {
     .photo-item {
         flex: 1 1 calc(100% - 30px);
+    }
+
+    
+    .about img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-text {
+        max-width: 100%;
+        padding: 0 10px; 
+        text-align: center; 
+    }
+
+   
+    .skill img {
+        width: 100%;
+        height: auto;
+    }
+
+    .skill-text {
+        max-width: 100%;
+        padding-left: 10px; 
+        text-align: center; 
     }
 }
