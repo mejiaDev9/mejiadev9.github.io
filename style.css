@@ -512,10 +512,7 @@ span .span1{
     position: relative;
   }
 
-  .e4{
-    width: 400px;
-    height: auto;
-  }
+  
   
   .description {
     position: absolute;
@@ -553,6 +550,15 @@ span .span1{
     filter: drop-shadow(10px 8px 6px blue);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
+
+.e4{
+    width:auto;
+    height: 120px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    filter: drop-shadow(10px 8px 6px blue);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
 
 .par1, .par2, .par3{
     color: white;
