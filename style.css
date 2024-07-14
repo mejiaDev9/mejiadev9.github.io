@@ -25,6 +25,7 @@
 h1{
     position: relative;
     margin-top: 200px;
+    margin-bottom: auto;
     font-size: 5vw;
     padding-left: 10px;
     color: #252839;
