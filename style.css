@@ -22,6 +22,66 @@
     width: auto;
     filter: drop-shadow(10px 8px 6px black);
 }
+h1{
+    position: relative;
+    margin-top: 200px;
+    font-size: 5vw;
+    padding-left: 10px;
+    color: #252839;
+    -webkit-text-stroke: 0.3vw #383d52;
+    text-transform: uppercase;
+}
+
+h1::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    padding-left: 5px;
+    height: 100%;
+    color: #01f387;
+    -webkit-text-stroke: 0vw #383d52;
+    border-right: 2px solid #01f387;
+    overflow: hidden;
+    animation: animate 3s infinite;
+}
+
+@keyframes animate {
+    0% {
+        width: 0%;
+    }
+    70%, 90% {
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+        margin: 0%;
+    }
+    h1::before {
+        padding-left: 3px;
+    }
+    @keyframes animate {
+        0% {
+            width: 0%;
+        }
+        90%, 90% {
+            width: 20%;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+    h1::before {
+        padding-left: 2px;
+    }
+}
 
 .main {
     width: 100%;
